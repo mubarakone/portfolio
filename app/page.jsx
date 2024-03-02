@@ -108,10 +108,68 @@ function ProjectsTab() {
 
 function WorkTab() {
   return (
-    <div>
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white">
-        🚧 Under Construcion... 
-      </h3>
+    <div className="grid lg:grid-cols-4 lg:gap-4 md:grid-cols-2 md:gap-4 sm:grid-cols-1 sm:gap-4 xs:gap-4">
+
+      <div class="bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+        <div class="p-4 md:p-5">
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+            Frontend Intern
+          </h3>
+          <p class="mt-1 text-gray-500 dark:text-gray-400">
+            Worked as a Web3 Frontend Developer on the Sentinel project, a DeFi application (has not been released yet). Was in charge of web2-Web3 integrations. Used Next.js as the framework, Typescript as the primary language, and Firebase as the backend database to call from.
+          </p>
+          <p class="mt-5 text-xs text-gray-500 dark:text-gray-500">
+            Aug 2022 - Nov 2022
+          </p>
+        </div>
+        <Image width={500} height={500} className="rounded-b-xl" src={'/Nethermind_Open_Roles_(1).png'} alt="Image Description" />
+      </div>
+
+      <div class="bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+        <div class="p-4 md:p-5">
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+            Support Engineer Intern
+          </h3>
+          <p class="mt-1 text-gray-500 dark:text-gray-400">
+            3 months of providing support and troubleshoot for developers integrating WalletConnect's clients to their applications. Support would be facilitated through platforms such as Discord, GitHub, Reddit, and StackOverflow.
+          </p>
+          <p class="mt-5 text-xs text-gray-500 dark:text-gray-500">
+            Apr 2022 - Jun 2022
+          </p>
+        </div>
+        <Image width={500} height={500} className="rounded-b-xl" src={'/walletconnect5023.jpg'} alt="Image Description" />
+      </div>
+
+      <div class="bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+        <div class="p-4 md:p-5">
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+            Freelance Web3 Developer
+          </h3>
+          <p class="mt-1 text-gray-500 dark:text-gray-400">
+            Frequent DAO member. Contributed on projects such as web3uikit and ethereum-boilerplate. Used Moralis for many freelance projects.
+          </p>
+          <p class="mt-5 text-xs text-gray-500 dark:text-gray-500">
+            Feb 2022 - Present
+          </p>
+        </div>
+        <Image width={500} height={500} className="rounded-b-xl" src={'/moralisLogoBrand2.png'} alt="Image Description" />
+      </div>
+
+      <div class="bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+        <div class="p-4 md:p-5">
+          <h3 class="text-lg font-bold text-gray-800 dark:text-white">
+            Blockchain Security Analyst Apprentice
+          </h3>
+          <p class="mt-1 text-gray-500 dark:text-gray-400">
+            3-month apprenticeship program. Reviewing Solidity-based smart contracts for vulnerabilities and exploits while being mentored.
+          </p>
+          <p class="mt-5 text-xs text-gray-500 dark:text-gray-500">
+            Aug 2021 - Oct 2021
+          </p>
+        </div>
+        <Image width={500} height={500} className="rounded-b-xl" src={'/FbbYmQT__400x400.png'} alt="Image Description" />
+      </div>
+
     </div>
   )
   
@@ -120,9 +178,22 @@ function WorkTab() {
 function EducationTab() {
   return (
     <div>
-      <h3 className="text-lg font-bold text-gray-800 dark:text-white">
-        🚧 Under Construcion... 
-      </h3>
+      <div class="relative bg-white border shadow-sm rounded-xl w-200 dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+        <Image width={200} height={200} className="rounded-b-xl" src={"/swclogo.jpg"} alt="Image Description" />
+        <div class="absolute top-0 start-0 end-0">
+          <div class="p-4 md:p-5">
+            <h3 class="text-lg font-bold text-gray-800">
+              Computer Science
+            </h3>
+            <p class="mt-1 text-gray-800">
+              Associate of Science/Transfer - AS/T
+            </p>
+            <p class="mt-5 text-xs text-gray-500">
+              Aug 2018 - May 2024
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   )
 }
@@ -221,7 +292,7 @@ export default function Home() {
               <div className="bg-gray-100 border-b rounded-t-xl pt-3 px-4 md:pt-4 md:px-5 dark:bg-slate-800 dark:border-gray-700">
                 <nav className="flex space-x-2" aria-label="Tabs">
                   <a className={ProjectsTabClasses} onClick={() => setActiveTab('Projects')}>
-                    Projects & Startups
+                    Projects & Apps
                   </a>
 
                   <a className={WorkTabClasses} onClick={() => setActiveTab('Work')}>
