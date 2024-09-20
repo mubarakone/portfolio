@@ -219,7 +219,7 @@ function EducationTab() {
               Associate of Science/Transfer - AS/T
             </p>
             <p class="mt-5 text-xs text-gray-500">
-              Aug 2018 - May 2024
+              In Progress...
             </p>
           </div>
         </div>
