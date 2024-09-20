@@ -11,6 +11,36 @@ function ProjectsTab() {
           <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* <!-- Card --> */}
             <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+              <div class="h-52 flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
+                <Image alt='Logo' src={'/blue-wikipedia-logo.png'} width={100} height={100} />
+              </div>
+              <div class="p-4 md:p-6">
+                <span class="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">
+                  Application
+                </span>
+                <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">
+                  Project Onchain Wikipedia
+                </h3>
+                <p class="mt-3 text-gray-500">
+                  Created in a month during Onchain Summer. You can read, edit, discuss articles immutably all onchain.
+                </p>
+              </div>
+              <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 dark:border-gray-700 dark:divide-gray-700">
+                <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="https://github.com/mubarakone/projectonchainwikipedia" target="_blank" rel="noopener noreferrer">
+                  <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                  </svg>
+                  View GitHub
+                </a>
+                <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-white dark:hover:bg-gray-800 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="https://projectonchainwikipedia.vercel.app/" target="_blank" rel="noopener noreferrer">
+                  View App
+                </a>
+              </div>
+            </div>
+            {/* <!-- End Card --> */}
+
+            {/* <!-- Card --> */}
+            <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
               <div class="h-52 flex flex-col justify-center items-center bg-amber-600 rounded-t-xl">
                 <Image alt='Logo' src={'/news-4303.svg'} width={100} height={100} />
               </div>
@@ -229,8 +259,8 @@ export default function Home() {
           <div className="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-10">
             {/* <!-- Announcement Banner --> */}
             <div className="flex justify-center">
-              <a className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400" href="https://newspaper.tips/" target="_blank" rel="noopener noreferrer">
-                Explore newspaper.tips
+              <a className="inline-flex items-center gap-x-2 bg-white border border-gray-200 text-xs text-gray-600 p-2 px-3 rounded-full transition hover:border-gray-300 dark:bg-gray-800 dark:border-gray-700 dark:hover:border-gray-600 dark:text-gray-400" href="https://3d-portfolio-eight-delta.vercel.app/" target="_blank" rel="noopener noreferrer">
+                Explore my New (and much cooler) 3D Website!
                 <span className="flex items-center gap-x-1">
                   <span className="border-s border-gray-200 text-blue-600 ps-2 dark:text-blue-500">Explore</span>
                   <svg className="flex-shrink-0 size-4 text-blue-600" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="m9 18 6-6-6-6"/></svg>
@@ -249,7 +279,7 @@ export default function Home() {
               <p className="text-lg text-gray-600 dark:text-gray-400">Web3 Frontend Engineer | Full-Stack Web Developer | Computer Science Undergraduate</p>
             </div>
             {/* <!-- Buttons --> */}
-            <div className="mt-8 gap-3 flex justify-center">
+            <div className="grid grid-rows-3 gap-3 mt-8 lg:grid-cols-3 lg:gap-3 lg:mx-16 md:grid-cols-3 md:gap-3 md:mx-16 justify-center">
               <a className="inline-flex justify-center items-center gap-x-3 text-center bg-gradient-to-tl from-blue-600 to-violet-600 hover:from-violet-600 hover:to-blue-600 border border-transparent text-white text-sm font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white px-4 dark:focus:ring-offset-gray-800" href="https://github.com/mubarakone" target="_blank" rel="noopener noreferrer">
                 <svg className="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                   <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
